@@ -40,11 +40,11 @@ export default class Map extends React.Component {
       // one dot per bin
   		let col = colorScale(percentages[x.id]);
       if(percentages[x.id]>0){
-        return <circle key={x.id} cx={x.x} cy={x.y} r="2.5" style={{"fill": col}}>
+        return <circle key={x.id} cx={x.x} cy={x.y} r="3.5" style={{"fill": col}}>
         <title>{placenames[x.id]}</title>
         </circle>;
       } else {
-        return <circle key={x.id} cx={x.x} cy={x.y} r="2.5" style={{"fill": col}}></circle>;
+        return <circle key={x.id} cx={x.x} cy={x.y} r="3.5" style={{"fill": col}}></circle>;
       }
 
   	});
@@ -57,7 +57,7 @@ export default class Map extends React.Component {
         <h2>-{mainLabel}</h2>
         <h4>{variations}</h4>
         <h3>{totalCount} places</h3>
-        <svg width="200" height="300">
+        <svg width="450" height="350">
       		{dots}
       	</svg>
        </div>

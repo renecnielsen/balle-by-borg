@@ -11,20 +11,20 @@ import suffixList from 'SuffixList';
 
 import "../html/index.html";
 import "../sass/main.sass";
-import placenamesPath from "file!../data/placenames_de.tsv"
+import placenamesPath from "file!../data/placenames_dk.tsv"
 
 const projection = d3_geo.geo
 	.mercator()
-	.center([13.4, 52.5])
-	.translate([160, 120])
-	.scale(1200)
+	.center([13.8, 55.98])
+	.translate([330, 210])
+	.scale(3000)
 ;
 
 const hexbin = d3_hexbin.hexbin()
 	.x((d)=>d.x)
 	.y((d)=>d.y)
 	.size([200, 400])
-	.radius(3)
+	.radius(5)
 ;
 
 d3_request.csv(placenamesPath, (d)=> {

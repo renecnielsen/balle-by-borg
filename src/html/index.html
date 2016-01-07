@@ -1,62 +1,48 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta title="-ach, -ingen, -zell: Investigating place name endings in Germany">
-        <meta description="A visual exploration of the spatial patterns in the endings of German town and village names.">
+        <meta title="-balle, -by og -borg: Investigating place name endings in Denmark">
+        <meta description="A visual exploration of the spatial patterns in the endings of Danish town and village names.">
+        <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700' rel='stylesheet' type='text/css'>
         <style>
         	html, body{
-        		font-family: "Avenir Next", "Helvetica Neue", Arial, sans;
-						background-color: #DFDADA;
+        		font-family: font-family: 'Gentium Book Basic', serif;
+						background-color: #f2f2f2;
 						padding: 0 1em;
-						color: #614949;
+						color: #333333;
 						line-height: 1.4;
 					}
 
+          p {
+            font-size: 1.2em;
+          }
+
 					h1, p{
-						margin: 2px 0 0;
+						margin: .25rem 0 0;
 						background: #FFF;
 						float: left;
 						clear: both;
-						padding: .33rem;
+						padding: .25rem;
 						max-width: 40em;
 					}
 
 					a{
 						text-decoration: none;
-						color: #D68185;
+						color: #49D1C3;
 					}
 
         </style>
     </head>
     <body>
     		<h1>
-    			-ach, -ingen, -zell
+    			-balle, -by & -borg
     		</h1>
     		<p>
-    			A visual exploration of the spatial patterns in the endings of German town and village names.
+    			A visual exploration of the spatial patterns in the endings of Danish town and village names. 99.999% copy of <a href="http://truth-and-beauty.net">Moritz Stefaner</a>'s <a href="http://truth-and-beauty.net/experiments/ach-ingen-zell/">German original</a> (code: <a href="http://github.com/moritzstefaner/ach-ingen-zell">http://github.com/moritzstefaner/ach-ingen-zell</a>)
     		</p>
-    		<p>I picked the most interesting suffixes from <a href="https://de.wikipedia.org/wiki/Ortsname">https://de.wikipedia.org/wiki/Ortsname</a> and cross-referenced them with a list of place names from <a href="http://www.geonames.org/export/">geonames</a>.
-            </p>
-            <p>
-
-            Darker colors indicate a higher proportion of place names with the respective suffix in a geographic cell. Hover over a cell for a while to see a tooltip with the place names.
-            </p>
-            <p style="">
-                Please note: My approach is not 100% scientific, as I only match the letters at the end of the string, not actual syllables. So, Kirchbach matches -ach. #justsaying
-            </p>
 
     		<p>
-    			Yet, it's a dataset I always found interesting to explore; plus, this quick experiment gave me the opportunity to play a bit with a few new tools and libraries I wanted to learn more about.
-    		</p>
-            <p>
-                Find the code at: <a href="http://github.com/moritzstefaner/ach-ingen-zell">http://github.com/moritzstefaner/ach-ingen-zell</a>
-            </p>
-            <p>
-            And, here's a few <a href="https://www.dropbox.com/sh/1w6lryj5dolarni/AAD7Bp9uozDpW1zOrSbZv067a?dl=0">screenshots</a>. Feel free to use them when you report on the project, but please link back to this page.
-            </p>
-    		<p>
-
-    			<a href="http://truth-and-beauty.net">Moritz Stefaner</a>, 2016
+    			<a href="http://renecnielsen.com">René Clausen Nielsen</a>, 2016
     		</p>
 
     		<div id="app">
