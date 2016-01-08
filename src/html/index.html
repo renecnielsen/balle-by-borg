@@ -5,32 +5,30 @@
         <meta description="A visual exploration of the spatial patterns in the endings of Danish town and village names.">
         <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700' rel='stylesheet' type='text/css'>
         <style>
-        	html, body{
-        		font-family: font-family: 'Gentium Book Basic', serif;
-						background-color: #f2f2f2;
-						padding: 0 1em;
-						color: #333333;
-						line-height: 1.4;
-					}
+        body {
+          font-family: 'Gentium Book Basic', serif;
+        	font-size: 20px;
+          font-weight: 400;
+        	background-color: #f2f2f2;
+        	padding: 0 1em;
+        	color: #5f5858;
+        	line-height: 1.4;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          font-weight: 700;
+        }
 
-          p {
-            font-size: 1.2em;
-          }
-
-					h1, p{
-						margin: .25rem 0 0;
-						background: #FFF;
-						float: left;
-						clear: both;
-						padding: .25rem;
-						max-width: 40em;
-					}
-
-					a{
-						text-decoration: none;
-						color: #49D1C3;
-					}
-
+        h1, p {
+        	margin: .25rem 0 0;
+        	background: #FFF;
+        	float: left;
+        	clear: both;
+        	padding: .25rem;
+        	max-width: 40em;
+        }
+        a {
+        	color: #515151;
+        }
         </style>
     </head>
     <body>
@@ -38,11 +36,13 @@
     			-balle, -by & -borg
     		</h1>
     		<p>
-    			A visual exploration of the spatial patterns in the endings of Danish town and village names. It's a 99.8% copy of the amazing <a href="http://truth-and-beauty.net">Moritz Stefaner</a>'s amazing <a href="http://truth-and-beauty.net/experiments/ach-ingen-zell/">German original</a> (<a href="http://github.com/moritzstefaner/ach-ingen-zell">his code</a>/<a href="https://github.com/renecnielsen/balle-by-borg">my code</a>). If you find this just slightly interesting, go look at Moritz' original. The German version is actually much more interesting.
+    			A visual exploration of the spatial patterns in the endings of Danish town and village names. It's a 99.8% copy of the amazing <a href="http://truth-and-beauty.net">Moritz Stefaner</a>'s amazing <a href="http://truth-and-beauty.net/experiments/ach-ingen-zell/">German original</a> (<a href="http://github.com/moritzstefaner/ach-ingen-zell">his code</a>/<a href="https://github.com/renecnielsen/balle-by-borg">my code</a>). If you find this just slightly interesting, please go have a look at Moritz' original. The German version is actually much more interesting.
     		</p>
-
-    		<p>
-    			<a href="http://renecnielsen.com">René Clausen Nielsen</a>, 2016
+        <p>
+          I used suffixes from <a href="https://da.wikipedia.org/wiki/Danske_stednavne">https://da.wikipedia.org/wiki/Danske_stednavne</a> with ~50 or more uses, and used Moritz' code to cross-reference them with a list of place names from <a href="http://www.geonames.org/export/">geonames</a>. Please note that darker colors indicate a higher <em>proportion</em> of place names with the respective suffix in a given geographic cell. Hover over a cell for a while to see a tooltip with the place names.
+        </p>
+    		<p style="font-size:0.8em">
+    			<a href="http://renecnielsen.com">René Clausen Nielsen</a> (<a href="https://twitter.com/ReneCNielsen">@ReneCNielsen</a>), 2016
     		</p>
 
     		<div id="app">

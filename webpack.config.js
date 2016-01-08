@@ -32,9 +32,9 @@ module.exports = {
         loader: "file?name=[name].[ext]",
       },
       {
-        test: /\.sass$/,
-        loaders: ["style", "css", "sass?indentedSyntax"]
-      }
+        test: /\.sass$|\.scss$/,
+        loaders: ["style", "css", "sass", "sass?indentedSyntax"]
+      },
     ]
   },
   // context: path.join(__dirname, 'build'),

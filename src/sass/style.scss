@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700);
+
+// Colour variables
+$fontCol: 			#5f5858;
+$linkCol: 			#515151;
+$backgroundCol: #f2f2f2;
+$green: 				#49D1C3;
+
+// Font Variables
+$font-stack:    "Gentium Book Basic", serif;
+
+// Styles
+body {
+  font: $font-stack;
+	font-size: 20px;
+  font-weight: 400;
+	background-color: $backgroundCol;
+	padding: 0 1em;
+	color: $fontCol;
+	line-height: 1.4;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1, p {
+	margin: .25rem 0 0;
+	background: #FFF;
+	float: left;
+	clear: both;
+	padding: .25rem;
+	max-width: 40em;
+}
+a {
+	color: $linkCol;
+}
